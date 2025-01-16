@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px; /* Adjust the total grid size */
+    height: 400px;
+    border: 2px solid #000; /* Optional: Adds a border around the grid */
+  }
+  
+  .square {
+    flex: 1 0 calc(100% / 16); /* Each square takes 1/16th of the row's width */
+    height: calc(100% / 16); /* Ensures a perfect square */
+    background-color: #ddd;
+    border: 1px solid #ccc; /* Optional: Border for grid squares */
+    box-sizing: border-box; /* Ensures padding/border don't mess up the size */
+  }
+  
